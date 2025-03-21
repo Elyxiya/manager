@@ -1,30 +1,21 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 let msg = 'Hello Vue 3 + Vite'
-console.log(msg)
+function changeMsg() {
+  msg = 'Hello Vue 3 + Vite'
+}
+const object = { name: 'John', age: 30, city: 'New York' }
+changeMsg()
+console.log(msg, object)
 </script>
 
 <template>
   <div>
-    <a
-      href="https://vite.dev"
-      target="_blank"
-    >
-      <img
-        src="/vite.svg"
-        class="logo"
-        alt="Vite logo"
-      >
+    <a href="https://vite.dev" target="_blank">
+      <img src="/vite.svg" class="logo" alt="Vite logo" />
     </a>
-    <a
-      href="https://vuejs.org/"
-      target="_blank"
-    >
-      <img
-        src="./assets/vue.svg"
-        class="logo vue"
-        alt="Vue logo"
-      >
+    <a href="https://vuejs.org/" target="_blank">
+      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
     </a>
   </div>
   <HelloWorld msg="Vite + Vue" />
