@@ -1,14 +1,3 @@
-<script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-let msg = 'Hello Vue 3 + Vite'
-function changeMsg() {
-  msg = 'Hello Vue 3 + Vite'
-}
-const object = { name: 'John', age: 30, city: 'New York' }
-changeMsg()
-console.log(msg, object)
-</script>
-
 <template>
   <div>
     <a href="https://vite.dev" target="_blank">
@@ -21,7 +10,18 @@ console.log(msg, object)
   <HelloWorld msg="Vite + Vue" />
 </template>
 
-<style scoped>
+<script setup lang="ts">
+import HelloWorld from './components/HelloWorld.vue'
+let msg = 'Hello Vue 3 + Vite'
+function changeMsg() {
+  msg = 'Hello Vue 3 + Vite'
+}
+const object = { name: 'John', age: 30, city: 'New York' }
+changeMsg()
+console.log(msg, object)
+</script>
+
+<style scoped lang="scss">
 .logo {
   height: 6em;
   padding: 1.5em;
