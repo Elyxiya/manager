@@ -1,17 +1,37 @@
 <template>
   <div>
-    <a href="https://vite.dev" target="_blank">
-      <img src="/vite.svg" class="logo" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+    <el-button plain @click="outerVisible = true">
+      Open the outer Dialog
+    </el-button>
+
+    <el-dialog v-model="outerVisible" title="Outer Dialog" width="800">
+      <span>This is the outer Dialog</span>
+      <el-dialog
+        v-model="innerVisible"
+        width="500"
+        title="Inner Dialog"
+        append-to-body
+      >
+        <span>This is the inner Dialog</span>
+      </el-dialog>
+      <template #footer>
+        <div class="dialog-footer">
+          <el-button @click="outerVisible = false">Cancel</el-button>
+          <el-button type="primary" @click="innerVisible = true">
+            Open the inner Dialog
+          </el-button>
+        </div>
+      </template>
+    </el-dialog>
   </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import { ref } from 'vue'
+const outerVisible = ref(false)
+const innerVisible = ref(false)
 let msg = 'Hello Vue 3 + Vite'
 function changeMsg() {
   msg = 'Hello Vue 3 + Vite'
