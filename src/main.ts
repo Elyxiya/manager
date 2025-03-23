@@ -8,7 +8,7 @@ import zhCn from 'element-plus/dist/locale/zh-cn.mjs'
 import 'virtual:svg-icons-register'
 //引入自定义插件对象：注册整个项目全局组件
 import gloablComponent from './components/index'
-
+import '@/styles/index.scss'
 console.log(import.meta.env)
 createApp(App)
   .use(gloablComponent)
