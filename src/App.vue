@@ -4,13 +4,29 @@
       <use href="#icon-open" fill="pink" stroke="blue"></use>
     </svg>
   </div>
-
+  <div>
+    <h1>axios测试</h1>
+  </div>
   <HelloWorld msg="Vite + Vue" />
 </template>
 
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
+import request from './utils/request'
+import { onMounted } from 'vue';
 
+onMounted(() => {
+  request({
+    url: '/user/login',
+    method: 'post',
+    data: {
+      username: 'admin',
+      password: "111111"
+    }
+  }).then(res => {
+    console.log(res)
+  })
+})
 let msg = 'Hello Vue 3 + Vite'
 function changeMsg() {
   msg = 'Hello Vue 3 + Vite'
