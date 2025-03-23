@@ -1,4 +1,4 @@
-import { createRouter,createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 import { constantRoute } from './routes'
 let router = createRouter({
   history: createWebHashHistory(),
@@ -9,7 +9,7 @@ let router = createRouter({
     return {
       left: 0,
       top: 0,
-    };
+    }
   },
 })
 
