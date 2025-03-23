@@ -10,7 +10,6 @@ import 'virtual:svg-icons-register'
 import gloablComponent from './components/index'
 import '@/styles/index.scss'
 
-
 createApp(App)
   .use(gloablComponent)
   .use(ElementPlus, {

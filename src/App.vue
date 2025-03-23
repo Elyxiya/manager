@@ -13,7 +13,7 @@
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
 import request from './utils/request'
-import { onMounted } from 'vue';
+import { onMounted } from 'vue'
 
 onMounted(() => {
   request({
@@ -21,9 +21,9 @@ onMounted(() => {
     method: 'post',
     data: {
       username: 'admin',
-      password: "111111"
-    }
-  }).then(res => {
+      password: '111111',
+    },
+  }).then((res) => {
     console.log(res)
   })
 })
