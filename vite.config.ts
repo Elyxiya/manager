@@ -7,7 +7,7 @@ import { viteMockServe } from 'vite-plugin-mock'
 
 // https://vite.dev/config/
 
-export default defineConfig(({ command })=> {
+export default defineConfig(({ command }) => {
   return {
     plugins: [
       vue(),
@@ -16,7 +16,7 @@ export default defineConfig(({ command })=> {
         symbolId: 'icon-[dir]-[name]',
       }),
       viteMockServe({
-        enable: command === 'serve',//开发阶段可以使用mock接口
+        enable: command === 'serve', //开发阶段可以使用mock接口
       }),
     ],
     resolve: {
@@ -34,4 +34,3 @@ export default defineConfig(({ command })=> {
     },
   }
 })
-
