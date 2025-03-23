@@ -9,10 +9,12 @@ import 'virtual:svg-icons-register'
 //引入自定义插件对象：注册整个项目全局组件
 import gloablComponent from './components/index'
 import '@/styles/index.scss'
+import router from './router'
 
 createApp(App)
   .use(gloablComponent)
   .use(ElementPlus, {
     locale: zhCn,
   })
+  .use(router)
   .mount('#app')

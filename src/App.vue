@@ -1,17 +1,10 @@
 <template>
   <div>
-    <svg width="100" height="100">
-      <use href="#icon-open" fill="pink" stroke="blue"></use>
-    </svg>
+    <router-view></router-view>
   </div>
-  <div>
-    <h1>axios测试</h1>
-  </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
 
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
 import request from './utils/request'
 import { onMounted } from 'vue'
 
