@@ -24,6 +24,13 @@
       </template>
     </el-dialog>
   </div>
+  
+  <div>
+      <svg width="100" height="100">
+        <use href="#icon-open"  fill="pink" stroke="blue"></use>
+      </svg>
+  </div>
+  
   <HelloWorld msg="Vite + Vue" />
 </template>
 
