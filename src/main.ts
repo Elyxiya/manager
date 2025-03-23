@@ -11,6 +11,17 @@ import gloablComponent from './components/index'
 import '@/styles/index.scss'
 
 console.log(import.meta.env)
+import axios from 'axios'
+ 
+ let a=axios({
+   url: '/api/user/login',
+   method: 'post',
+   data: {
+     username: 'admin',
+     password: '111111',
+   },
+ })
+ console.log(a)
 createApp(App)
   .use(gloablComponent)
   .use(ElementPlus, {
