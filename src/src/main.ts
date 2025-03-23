@@ -9,17 +9,6 @@ import 'virtual:svg-icons-register'
 //引入自定义插件对象：注册整个项目全局组件
 import gloablComponent from './components/index'
 import '@/styles/index.scss'
-import axios from 'axios'
-
-let a=axios({
-  url: '/api/user/login',
-  method: 'post',
-  data: {
-    username: 'admin',
-    password: '111111',
-  },
-})
-console.log(a)
 console.log(import.meta.env)
 createApp(App)
   .use(gloablComponent)
