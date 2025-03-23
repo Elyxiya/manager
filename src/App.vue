@@ -1,5 +1,4 @@
 <template>
-
   <div>
     <svg width="100" height="100">
       <use href="#icon-open" fill="pink" stroke="blue"></use>
@@ -11,7 +10,6 @@
 
 <script setup lang="ts">
 import HelloWorld from './components/HelloWorld.vue'
-
 
 let msg = 'Hello Vue 3 + Vite'
 function changeMsg() {
