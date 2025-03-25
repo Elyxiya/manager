@@ -37,19 +37,19 @@ export const constantRoute = [
     component: () => import('@/views/404/index.vue'),
     name: '404',
     meta: {
-        title: '404',
-        hidden: true,
-        icon: 'DocumentDelete'
-    }
+      title: '404',
+      hidden: true,
+      icon: 'DocumentDelete',
+    },
   },
   {
     path: '/:pathMatch(.*)*',
     redirect: '/404',
     name: 'any',
     meta: {
-        title: '404',
-        hidden: true,
-        icon: 'DocumentDelete'
-    }
+      title: '404',
+      hidden: true,
+      icon: 'DocumentDelete',
+    },
   },
 ]
