@@ -11,6 +11,6 @@ export default {
     //将element-plus提供图标注册为全局组件
     for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
       app.component(key, component)
-  }
+    }
   },
 }
