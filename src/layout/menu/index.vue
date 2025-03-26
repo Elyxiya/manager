@@ -61,7 +61,7 @@ const goRoute = (vc: any) => {
 </script>
 <script lang="ts">
 export default {
-    name: 'Menu'
+  name: 'Menu',
 }
 </script>
 <style scoped></style>
