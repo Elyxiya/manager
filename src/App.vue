@@ -5,28 +5,7 @@
 </template>
 
 <script setup lang="ts">
-import request from './utils/request'
-import { onMounted } from 'vue'
 
-onMounted(() => {
-  request({
-    url: '/user/login',
-    method: 'post',
-    data: {
-      username: 'admin',
-      password: '111111',
-    },
-  }).then((res) => {
-    console.log(res)
-  })
-})
-let msg = 'Hello Vue 3 + Vite'
-function changeMsg() {
-  msg = 'Hello Vue 3 + Vite'
-}
-const object = { name: 'John', age: 30, city: 'New York' }
-changeMsg()
-console.log(msg, object)
 </script>
 
 <style scoped lang="scss">
