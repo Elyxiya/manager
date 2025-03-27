@@ -67,6 +67,10 @@ import { useRouter, useRoute } from 'vue-router'
 import useUserStore from '@/store/modules/user'
 //获取骨架的小仓库
 import useLayOutSettingStore from '@/store/modules/setting'
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0912b81 (feat: tabber)
 let layoutSettingStore = useLayOutSettingStore()
 let userStore = useUserStore()
 //获取路由器对象

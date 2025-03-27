@@ -19,7 +19,7 @@ export const constantRoute = [
       hidden: false,
       icon: '',
     },
-
+    redirect: '/home',
     children: [
       {
         path: '/home',
@@ -101,5 +101,46 @@ export const constantRoute = [
       icon: 'Goods',
     },
     redirect: '/product/trademark',
-  },
+    children: [
+      {
+          path: '/product/trademark',
+          component: () => import('@/views/product/trademark/index.vue'),
+          name: "Trademark",
+          meta: {
+              title: '品牌管理',
+              icon: 'ShoppingCartFull',
+          }
+      },
+      {
+          path: '/product/attr',
+          component: () => import('@/views/product/attr/index.vue'),
+          name: "Attr",
+          meta: {
+              title: '属性管理',
+              icon: 'ChromeFilled',
+          }
+      },
+      {
+          path: '/product/spu',
+          component: () => import('@/views/product/spu/index.vue'),
+          name: "Spu",
+          meta: {
+              title: 'SPU管理',
+              icon: 'Calendar',
+          }
+      },
+      {
+          path: '/product/sku',
+          component: () => import('@/views/product/sku/index.vue'),
+          name: "Sku",
+          meta: {
+              title: 'SKU管理',
+              icon: 'Orange',
+          }
+      },
+  ]
+}
+
+
 ]
+
