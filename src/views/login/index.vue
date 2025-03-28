@@ -76,6 +76,7 @@ const login = async () => {
   try {
     //保证登录成功
     await useStore.userLogin(loginForm)
+    
     //编程式导航跳转到展示数据首页
     //判断登录的时候,路由路径当中是否有query参数，如果有就往query参数挑战，没有跳转到首页
     let redirect: any = $route.query.redirect
