@@ -22,6 +22,7 @@
           size="small"
           show-alpha
           :predefine="predefineColors"
+          :teleported="false"
         />
       </el-form-item>
       <el-form-item label="暗黑模式">
